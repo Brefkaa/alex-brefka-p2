@@ -1,0 +1,10 @@
+<form #createTodoForm="ngForm" (ngSubmit)="createTodo()" class="todo-form">
+    <mat-form-field class="form-field">
+        <mat-label>Task</mat-label>
+        <input matInput name="task" [(ngModel)]="model.task" placeholder="Enter a task">
+    </mat-form-field>
+    <div class="form-field">
+        <button mat-button type="submit" class="form-button">Assign Task</button>
+        <button mat-button class="form-button">Cancel</button>
+    </div>
+</form>
