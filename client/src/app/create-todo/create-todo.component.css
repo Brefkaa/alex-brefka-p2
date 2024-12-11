@@ -10,6 +10,14 @@
     width: 100%;
 }
 
-.form-button {
-    margin-right: 10px;
+mat-label {
+    color: rgb(255, 125, 125);
+}
+
+#form-button {
+    color: rgb(255, 125, 125);
+}
+
+#form-button:hover {
+    background-color: rgba(255, 44, 44, 0.144);
 }

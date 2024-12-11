@@ -31,10 +31,10 @@ public class ToDoListController : ControllerBase
     }
 
     ///<summary>
-    ///Get api/todo/[id]
+    ///Get api/todolist/[id]
     ///</summary>
     ///<param name="id">todo id</param>
-    ///<returns>A singtodo</returns>
+    ///<returns>A single todo</returns>
     [HttpGet("{id}", Name = "GetById")]
     public ActionResult<Todo> GetById(Guid id)
     {
@@ -48,10 +48,10 @@ public class ToDoListController : ControllerBase
     }
 
     /// <summary>
-    /// POST api/post
+    /// POST api/todolist
     /// </summary>
-    /// <param name="request">JSON request containing post fields</param>
-    /// <return>A new post</return>
+    /// <param name="request">JSON request containing todo fields</param>
+    /// <return>A new todo</return>
     [HttpPost(Name = "Create")]
     public ActionResult<Todo> Create([FromBody] Todo request)
     {
@@ -74,10 +74,10 @@ public class ToDoListController : ControllerBase
     }
 
     /// <summary>
-    /// PUT api/post
+    /// PUT api/todo
     /// </summary>
-    /// <param name="request">JSON request containing one or more updated post fields</param>
-    /// <returns>An updated post</returns>
+    /// <param name="request">JSON request containing one or more updated todo fields</param>
+    /// <returns>An updated todo</returns>
     [HttpPut(Name = "Update")]
     public ActionResult<Todo> Update([FromBody] Todo request)
     {

@@ -1,9 +1,11 @@
-.post-card {
+.todo-card {
     max-width: 500px;
     margin: 40px auto;
+    background-color: rgba(255, 44, 44, 0.144);
+    color: rgb(255, 125, 125);
 }
 
-.post-card:hover {
+.todo-card:hover {
     cursor: pointer;
-    background-color: #efefef;
+    background-color: rgba(255, 44, 44, 0.329);
 }

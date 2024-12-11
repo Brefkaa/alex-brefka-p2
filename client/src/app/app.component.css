@@ -3,5 +3,9 @@
 }
 
 mat-toolbar {
-    background-color: rgba(255, 175, 175, 0.658);
+    background-color: rgba(255, 44, 44, 0.144);
+}
+
+mat-icon {
+    color: rgba(255, 44, 44, 0.329);
 }
